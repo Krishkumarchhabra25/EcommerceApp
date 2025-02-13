@@ -17,9 +17,7 @@ const fallbackIcon = ({ color }: { color: string }) => (
 );
 
 const TabBarButton = ({ onPress, onLongPress, isFocused, routeName }: Props) => {
-  console.log("🟢 Route Name:", routeName);
-  console.log("🟢 Available Keys in icon:", Object.keys(icon));
-
+  
   const IconComponent = icon[routeName] || fallbackIcon;
 
   if (!icon[routeName]) {

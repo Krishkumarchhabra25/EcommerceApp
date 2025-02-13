@@ -62,7 +62,7 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
         };
 
         return (
-          <TabBarButton onLongPress={onLongPress} onPress={onPress}  isFocused={isFocused} routeName={route.name} />
+          <TabBarButton key={route.key} onLongPress={onLongPress} onPress={onPress}  isFocused={isFocused} routeName={route.name} />
         );
       })}
     </View>
